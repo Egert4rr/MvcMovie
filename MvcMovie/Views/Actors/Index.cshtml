@@ -1,0 +1,73 @@
+﻿@model MvcMovie.Models.ActorsSkillsModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<form asp-controller="Actors" asp-action="Index" method="get">
+    <p>
+        <select asp-for="Skill" asp-items="Model.Skills">
+            <option value="">All</option>
+        </select>
+
+        Firstname: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Actors[0].Firstname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Actors[0].Lastname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Actors[0].BirthDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Actors[0].Skills)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Actors[0].Networth)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Actors)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Firstname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Lastname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BirthDay)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Skills)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Networth)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
