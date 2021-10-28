@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xRgFgP83ghyI6FDPqnhU37O627jFby7peXkoedRXw8RKbEJSU/XBHStRhaD6dDy/epu6I07qt3CYS416XQLySw==",
+  "dgSpecHash": "YNEmYeZeu84DmbZQXhDXWELlUUgaM4R0qwJMIjwpbcCpmM3ti9flvykypoKCObJfZfRJSsep01mNbsolHBn31A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\opilane\\Source\\Repos\\TARpe20\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
+  "projectFilePath": "C:\\Users\\opilane\\Desktop\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\opilane\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

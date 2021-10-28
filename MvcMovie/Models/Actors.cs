@@ -29,6 +29,7 @@ namespace MvcMovie.Models
         [StringLength(100)]
         public string Skills { get; set; }
 
+        [Range(0,int.MaxValue, ErrorMessage = "Can't be negative")]
         [Display(Name = "Net worth")]
         public decimal Networth { get; set; }
     }
